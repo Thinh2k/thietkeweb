@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(142, 184, 233);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 16px;
+            background-color: white;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:focus {
+            opacity: 1;
+        }
+
+        a {
+            color: dodgerblue;
+        }
+
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<button style="margin-bottom: 20px;"><a href="index.html">Quay lại</a></button>
+<form method="post" action="index.html">
+    <div class="container">
+        <h2>Đăng ký tài khoản</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Vui lòng điền vào mẫu này để tạo một tài khoản.</p>
+        <hr>
+
+        <label for="name"><b>Họ và tên đầy đủ</b></label>
+        <input type="text" placeholder="Nhập họ và tên" name="name" required>
+
+        <label for="email"><b>Địa chỉ email</b></label>
+        <input type="text" placeholder="Nhập Email" name="email" required>
+
+        <label for="psw"><b>Mật khẩu</b></label>
+        <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+
+        <label for="psw-repeat"><b>Xác nhận mật khẩu</b></label>
+        <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required>
+
+        <label for="datetime"><b>Ngày sinh</b></label>
+        <br>
+        <input style="margin-top: 10px; margin-bottom: 15px;"  type="date" name="bday">
+
+        <br>
+        <label for="male"><b>Giới tính</b></label>
+        <br>
+        <input style="margin-top: 10px;" type="radio" name="gender" value="male">
+        Nam <br>
+        <input style="margin-top: 10px; margin-bottom: 15px;" type="radio" name="gender" value="female">
+        Nữ <br>
+
+        <input type="radio" name="gender" value="other" required> Bạn đồng ý với thỏa thuận của chúng tôi <a
+            href="#">Term & Privacy</a>.
+
+        <button type="submit" class="registerbtn">Đăng ký</button>
+    </div>
+
+    <div class="container signin">
+        <p>Bạn đã có tài khoản? <a href="sigin.html">Đăng nhập tại đây</a>.</p>
+    </div>
+</form>
+</body>
+
+</html>
