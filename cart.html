@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .gio-hang {
+            border: .1rem solid rgba(0,0,0,.3);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            padding: 20px;
+            margin: auto;
+            max-width: 1000px;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, 'serif' ;
+        }
+        input{
+            padding: 10px;
+            border: 2px solid #413c3c;
+            border-radius: 5px;
+        }
+        .item-gio-hang {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .item-gio-hang .hinhanh, .soluong, .tongtien, .hanhdong{
+            flex: 1;
+            margin-left: 20px;
+        }
+        .item-gio-hang .gia{
+            flex: 2;
+        }
+        .item-gio-hang .ten{
+            flex: 3;
+            margin-left: 20px;
+        }
+        .item-gio-hang .gia .giagoc{
+            font-size: 12px;
+            text-decoration: line-through;
+            color: #413c3c;
+        }
+        .item-gio-hang .gia .giaban{
+            color: red;
+        }
+        .item-gio-hang .hanhdong i:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="" class="logo">Fashion Hats<span></span></a>
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="review.html">Thông tin</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+        <div class="icons">
+            <a href="" class="fas fa-heart"></a>
+            <a href="" class="fas fa-shopping-cart"></a>
+            <a href="sigin.html" class="fas fa-user"></a>
+        </div>
+    </header>
+    <section class="contact" id="contact">
+        <h1 class="heading" style="margin-top: 60px;"> <span> Danh sách sản phẩm đã mua</span></h1>
+        <div class="gio-hang">
+            <div class="item-gio-hang">
+                <div class="hinh-anh">
+                    <img src="images/bk02.jpg" alt="">
+                </div>
+                <p class="ten">Mũ Thời Trang Nữ Cao Cấp Lựa Chọn Hàng Đầu Của Nàng Đẹp</p>
+                <div class="gia">
+                    <span class="giagoc">300.000đ</span>
+                    <span class="giaban">199.000đ</span>
+                </div>
+                <input type="number" class="soluong" value="1">
+                <p class="tongtien">199.000đ</p>
+                <div class="hanhdong">
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+            <div class="item-gio-hang">
+                <div class="hinh-anh">
+                    <img src="images/sb3.jpg" alt="">
+                </div>
+                <p class="ten">Mũ Snapback Mũ lưỡi trai Thời Trang Advisory đen tại E3 Audio</p>
+                <div class="gia">
+                    <span class="giagoc">250.000đ</span>
+                    <span class="giaban">165.000đ</span>
+                </div>
+                <input type="number" class="soluong" value="1">
+                <p class="tongtien">250.000đ</p>
+                <div class="hanhdong">
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span> Thanh toán </span></h1>
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="Nhập tên" class="box">
+                <input type="email" placeholder="Nhập email" class="box">
+                <input type="number" placeholder="Nhập số điện thoại" class="box">
+                <input type="text" placeholder="Nhập địa chỉ" class="box">
+                <input style="margin-left: 150px;" type="submit" value="Thanh toán" class="btn">
+            </form>
+
+            <div class="image">
+                <img src="images/QR.png" alt="" style="height: 70% ; width: 70%; margin-left: 50px;">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="credit"> created by <span> mr.Thịnh </span> all rights </div>
+        <div class="box-container">
+            <div class="box">
+                <h3>Địa chỉ</h3>
+                <p style="font-size: 16px; margin-bottom: 10px; margin-top: 10px;">Hòa Quang Nam, Phú Hòa, Phú Yên</p>
+                <p style="font-size: 16px;">Phone: 0346693347</p>
+            </div>
+            <div class="box">
+                <h3>Mạng xã hội</h3>
+                <a href=""><i class="fab fa-facebook-f" style="color: blue;"></i><span style="color: blue;"> Facebook</span></a>
+                <a href=""><i class="fab fa-youtube" style="color: red;"></i><span style="color: red;"> Youtube</span></a>
+                <a href=""><i class="fab fa-instagram" style="color: rgb(224, 22, 22);"></i><span style="color: rgb(224, 22, 22);"> Instagram</span></a>
+            </div>
+            <div class="box">
+                <h3>Phương thức thanh toán</h3>
+                <img src="images/card.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
